@@ -37,7 +37,7 @@ yo apollo-knex:schema
 Below is a default generated project structure and some brief explanation for each folder/file
  ```
  .
-├── Dockerfile                           # Standard Dockerfile for building to a container
+├── Dockerfile                           # Standard Dockerfile for building to a container image
 ├── README.md                            # README for the project. (I would appreciate input on how to make this better)
 ├── db                                   # Folder containing all of the Knex migrations/seed data
 │   ├── migrations
@@ -46,8 +46,8 @@ Below is a default generated project structure and some brief explanation for ea
 │       └── initial.js                   # Seed data that can be run in your docker container
 ├── docker-compose.yml                   # Compose file that contains a db instance and your apollo app
 ├── knexfile.js                          # Builds the Knex connection config that is fed into the Database.ts file
-├── license                              # Some license file
-├── nodemon.json                         
+├── LICENSE                              # Some license file
+├── nodemon.json
 ├── package-lock.json
 ├── package.json
 ├── src
