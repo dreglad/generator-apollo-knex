@@ -1,8 +1,5 @@
 FROM node:10.18-alpine
 
-RUN apk update && apk upgrade && \
-    apk add --no-cache bash python g++ make git openssh openssh-client
-
 WORKDIR /app
 
 COPY package*.json ./
