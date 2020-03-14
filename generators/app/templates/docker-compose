@@ -2,7 +2,6 @@ version: '3'
 services:
   <%= composeName %>:
     build: ./
-    command: npm start
     volumes:
       - ./:/app
     ports:
