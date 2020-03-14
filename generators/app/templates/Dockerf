@@ -5,8 +5,6 @@ RUN apk update && apk upgrade && \
 
 WORKDIR /app
 
-RUN npm install -g nodemon
-
 COPY package*.json ./
 
 RUN npm ci \
