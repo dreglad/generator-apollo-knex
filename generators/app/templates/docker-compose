@@ -1,4 +1,5 @@
 version: '3'
+
 services:
   <%= composeName %>:
     build: ./
@@ -6,11 +7,11 @@ services:
       - ./:/app
     ports:
       - '4000:4000'
+    variables:
+      DATABASE_URL: postgresql://postgres:password@ldb:5432/postgres
     depends_on:
       - db
   db:
     image: postgres
     environment:
-      POSTGRES_USER: 'root'
-      POSTGRES_PASSWORD: 'root'
-      POSTGRES_DB: 'quizzes'
+      POSTGRES_PASSWORD: password
