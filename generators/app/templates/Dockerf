@@ -1,17 +1,21 @@
-FROM node:10-alpine
+ARG NODE_VERSION=10-alpine
+FROM node:${NODE_IMAGE}
 
 WORKDIR /app
 
+# Install NPM dependencies
 COPY package*.json ./
-
 RUN npm install
 
+# Copy source code
 COPY . .
 
-RUN chmod -R 777 /app/util/wait-for-it.sh
+# Make wait-for-it script executable
+RUN chmod +x /app/util/wait-for-it.sh
 
+# Published TCP port
 ENV PORT 4000
-
 EXPOSE 4000
 
+# Run app
 CMD ["npm", "start"]
