@@ -129,8 +129,8 @@ module.exports = class extends Generator {
     );
 
     this.fs.copyTpl(
-      this.templatePath("license"),
-      this.destinationPath(`${this.answers.serviceName}/license`),
+      this.templatePath("LICENSE"),
+      this.destinationPath(`${this.answers.serviceName}/LICENSE`),
       {
         ...this.answers
       }

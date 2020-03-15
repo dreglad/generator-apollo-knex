@@ -1,5 +1,5 @@
 # <%= serviceName %>
-This project is a graphql API generated via the [apollo-knex generator](https://github.com/danwakeem/apollo-knex).
+This project is a GraphQL API generated via the [apollo-knex generator](https://github.com/danwakeem/apollo-knex).
 
 ## Setup
 The only thing you will need to do to set up your local dev environment is pull down the deps.

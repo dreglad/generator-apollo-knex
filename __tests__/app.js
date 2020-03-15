@@ -25,7 +25,7 @@ describe("generator-apollo-knex:app", () => {
       "serviceName/.prettierignore",
       "serviceName/package.json",
       "serviceName/nodemon.json",
-      "serviceName/license",
+      "serviceName/LICENSE",
       "serviceName/knexfile.js",
       "serviceName/.gitignore",
       "serviceName/.dockerignore",
