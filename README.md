@@ -2,20 +2,20 @@
 
 > A Generator for a simple apollo server integrated with knex
 
-I should point out this was inspired by the [apollo-typescript-starter](https://github.com/kylealwyn/apollo-typescript-starter). There are a few changes I made to this config vs. the original but thought it would be nice to have a generator around this.
+This was forked from [Danwakeem/generator-apollo-knex](https://github.com/Danwakeem/generator-apollo-knex).
 
 ## Installation
 
 First, install [Yeoman](https://yeoman.io) and generator-apollo-knex using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
-```bash
+```sh
 npm install -g yo
 npm install -g generator-apollo-knex
 ```
 
 Then generate your new project:
 
-```bash
+```sh
 yo apollo-knex
 ```
 
@@ -27,7 +27,7 @@ This generator also includes a CLI to create a new GraphQL schema that will auto
 
 To generate a new schema run and follow the prompts:
 
-```bash
+```sh
 yo apollo-knex:schema
 ```
 
@@ -39,7 +39,7 @@ yo apollo-knex:schema
 
 Below is a default generated project structure and some brief explanation for each folder/file
 
-```
+```text
 .
 ├── Dockerfile                           # Standard Dockerfile for building to a container image
 ├── README.md                            # README for the project. (I would appreciate input on how to make this better)
