@@ -16,11 +16,11 @@ If you need to add new schemas you will need to install the schema generator.
 ## Run the app locally
 This application takes advantage of docker to run the full application.
 ```
-docker-compose up
+docker-compose up -d
 ```
 
 ## Connection the graphiql interface
-Go to `localhost:3000/graphql` in your browser.
+Go to `localhost:4000/graphql` in your browser.
 
 ## Run a Seed of the database
 Once you have stood up the app in docker you may want to get some test data into you docker db. The easiest way to do this would be to run the knex seed script from a running quiz docker container.

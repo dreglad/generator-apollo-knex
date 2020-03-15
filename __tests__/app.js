@@ -8,7 +8,7 @@ describe("generator-apollo-knex:app", () => {
     return helpers.run(path.join(__dirname, "../generators/app")).withPrompts({
       serviceName: "serviceName",
       author: "person",
-      email: "person@person.com",
+      email: "person@example.com",
       composeName: "backend",
       name: "blah",
       apiName: "blah",
@@ -16,7 +16,7 @@ describe("generator-apollo-knex:app", () => {
     });
   });
 
-  it("creates files", () => {
+  it("create files", () => {
     assert.file([
       "serviceName/tslint.json",
       "serviceName/tsconfig.json",

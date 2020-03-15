@@ -18,7 +18,9 @@
     "graphql",
     "typescript",
     "apollo",
-    "apollo-server"
+    "apollo-server",
+    "knex",
+    "postgres"
   ],
   "scripts": {
     "prestart": "./util/wait-for-it.sh db:5432 -t 90 -- knex migrate:latest",

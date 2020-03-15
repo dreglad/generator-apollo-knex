@@ -20,7 +20,7 @@ module.exports = class extends Generator {
       {
         type: "input",
         name: "name",
-        message: "File name for your sample schema file",
+        message: "File name for your sample GraphQL schema file",
         default: "sample"
       }
     ]);
@@ -29,14 +29,14 @@ module.exports = class extends Generator {
         type: "input",
         name: "apiName",
         message:
-          "What would you like the name of the first sample schema to be? (You will probably replace this but just here to get you started)",
+          "What would you like the name of the first sample GraphQL schema to be? (You will probably replace this but just here to get you started)",
         default: this.answers.name
       },
       {
         type: "input",
         name: "tableName",
         message:
-          "This is the table name that will map to your sample graphql schema.",
+          "This is the table name that will map to your sample GrpahQL schema.",
         default: this.answers.name
       }
     ]);
