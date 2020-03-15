@@ -2,15 +2,15 @@ const tableName = '<%= tableName %>';
 
 export const typeDef = `
   extend type Query {
-    <%= apiName %>(id: String!): <%= apiNameCap %>!
+    <%= apiName %>(id: ID!): <%= apiNameCap %>
   }
 
   extend type Mutation {
-    <%= apiName %>(id: String!): <%= apiNameCap %>
+    <%= apiName %>(id: ID!): <%= apiNameCap %>
   }
 
   type <%= apiNameCap %> {
-    id: String!
+    id: ID!
   }
 `;
 
