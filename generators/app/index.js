@@ -153,6 +153,14 @@ module.exports = class extends Generator {
     );
 
     this.fs.copyTpl(
+      this.templatePath("dockerignore"),
+      this.destinationPath(`${this.answers.serviceName}/.dockerignore`),
+      {
+        ...this.answers
+      }
+    );
+
+    this.fs.copyTpl(
       this.templatePath("Dockerf"),
       this.destinationPath(`${this.answers.serviceName}/Dockerfile`),
       {

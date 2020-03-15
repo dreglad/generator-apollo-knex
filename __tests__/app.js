@@ -28,6 +28,7 @@ describe("generator-apollo-knex:app", () => {
       "serviceName/license",
       "serviceName/knexfile.js",
       "serviceName/.gitignore",
+      "serviceName/.dockerignore",
       "serviceName/.env",
       "serviceName/Dockerfile",
       "serviceName/docker-compose.yml",
